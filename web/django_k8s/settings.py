@@ -77,6 +77,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        # 'HOST': 'localhost',  # Ensure this is set to 'localhost'
+        # 'PORT': '5434',       # Ensure this is set to '5434'
+
     }
 }
 
@@ -90,7 +93,7 @@ DB_IS_AVAIL = all([
     DB_PASSWORD,
     DB_DATABASE,
     DB_HOST,
-    DB_PORT
+    DB_PORT,
 ])
 
 
